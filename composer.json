@@ -1,0 +1,16 @@
+{
+    "name": "debor/coletek",
+    "description": "project coletek",
+    "autoload": {
+        "psr-4": {
+            "Debor\\Coletek\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Deborah Dalonso",
+            "email": "deborahdlns@gmail.com"
+        }
+    ],
+    "require": {}
+}
