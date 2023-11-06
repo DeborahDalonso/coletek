@@ -4,9 +4,9 @@ namespace Classes\Controller;
 
 class Home
 {
+    
     public function index()
     {
-        include 'views/home.php';
+        include __DIR__ . '../../../views/home.php';
     }
-
 }

@@ -1,15 +1,14 @@
 <?php
 
-namespace controller;
+namespace Classes\Controller;
 
-require_once 'models/User.php';
+// require_once 'models/User.php';
 
-class UserController
+class User
 {
     public function index()
     {
-        // Lógica para a página de listagem de usuários
-        include 'views/user/index.php';
+        include __DIR__ . '../../../views/user/index.php';
     }
 
     public function create()

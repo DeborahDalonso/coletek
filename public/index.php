@@ -10,13 +10,12 @@ $routeInfo = $router->match($url);
 
 $controllerName = $routeInfo['controller'];
 
+$class = '\Classes\Controller\\' . $routeInfo['controller'];
+
 $actionName = $routeInfo['action'];
 
 require_once "../src/classes/controllers/$controllerName.php";
 
-$controllerInstance = new \Classes\Controller\Home();
-
-// print_r($controllerInstance);
-
+$controllerInstance = new $class();
 
 $controllerInstance->$actionName(...$routeInfo['params']);
