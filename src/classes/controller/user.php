@@ -1,8 +1,8 @@
 <?php
 
-namespace Classes\Controller;
+namespace Controller;
 
-// require_once 'models/User.php';
+use Model\User as UserModel;
 
 class User
 {
@@ -13,19 +13,26 @@ class User
 
     public function create()
     {
-        // Lógica para a criação de um novo usuário
         include 'views/user/create.php';
+    }
+
+    public function store()
+    {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+
+        $userModel = new UserModel();
+
+        $success = $userModel->createUser($name, $email);
     }
 
     public function edit($userId)
     {
-        // Lógica para editar um usuário com o ID $userId
         include 'views/user/edit.php';
     }
 
     public function delete($userId)
     {
-        // Lógica para excluir um usuário com o ID $userId
         include 'views/user/delete.php';
     }
 }

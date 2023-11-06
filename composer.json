@@ -3,7 +3,8 @@
     "description": "project coletek",
     "autoload": {
         "psr-4": {
-            "Debor\\Coletek\\": "src/"
+            "Debor\\Coletek\\": "src/",
+            "Model\\": "/src/classes/model/"
         }
     },
     "authors": [

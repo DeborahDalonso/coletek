@@ -3,7 +3,7 @@
         'name' => 'debor/coletek',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'e73eee541af578b56514b5df270cc11d6d889d68',
+        'reference' => '370252ee1606e684df234122f6fb9efcca25f2ad',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'debor/coletek' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'e73eee541af578b56514b5df270cc11d6d889d68',
+            'reference' => '370252ee1606e684df234122f6fb9efcca25f2ad',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

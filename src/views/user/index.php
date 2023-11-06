@@ -13,14 +13,14 @@
 
     <div class="container mt-3">
         <h2>Cadastro de Usuário</h2>
-        <form action="/action_page.php">
+        <form action="/user/store" method="post">
+            <div class="mb-3">
+                <label for="pwd">Nome:</label>
+                <input type="text" class="form-control" id="name" placeholder="Nome completo" name="name">
+            </div>
             <div class="mb-3 mt-3">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="email@email.com" name="email">
-            </div>
-            <div class="mb-3">
-                <label for="pwd">Nome:</label>
-                <input type="text" class="form-control" id="name" placeholder="Nome completo" name="pswd">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

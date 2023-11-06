@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Model\\' => array('/src/classes/model'),
     'Debor\\Coletek\\' => array($baseDir . '/src'),
 );
